@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Jetpack Navigation</string>
+    <string name="navigation_text">Navigation refers to the interactions that allow users to navigate across, into, and back out from the different pieces of content within your app. Android Jetpack\'s Navigation component helps you implement navigation, from simple button clicks to more complex patterns, such as app bars and the navigation drawer. The Navigation component also ensures a consistent and predictable user experience by adhering to an established set of principles.</string>
+    <string name="question">What layout do you use for complex screens?</string>
+    <string name="try_again">Try Again</string>
+    <string name="exit">Exit</string>
+    <string name="submit">Submit</string>
+    <string name="constraintlayout">ConstraintLayout</string>
+    <string name="gridlayout">GridLayout</string>
+    <string name="linearlayout">LinearLayout</string>
+    <string name="framelayout">FrameLayout</string>
+    <string name="login">Login</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="gender">Gender</string>
+    <string name="name">Name</string>
+    <string name="vs">VS</string>
+    <string name="start">Start</string>
+    <string name="jetpack_navigation">Jetpack Navigation</string>
+    <string name="play">Play</string>
+    <string name="score_board">Score Board</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="next_match">Next Match</string>
+    <string name="nothing_to_show">Nothing To Show</string>
+</resources>
