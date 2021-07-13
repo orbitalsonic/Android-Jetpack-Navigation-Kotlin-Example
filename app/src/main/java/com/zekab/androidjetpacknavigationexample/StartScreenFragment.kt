@@ -4,27 +4,26 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.zekab.androidjetpacknavigationexample.databinding.FragmentStartScreenBinding
 
-class StartScreenFragment : Fragment() {
+class StartScreenFragment : BaseFragment<FragmentStartScreenBinding>() {
 
-    private lateinit var binding: FragmentStartScreenBinding
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_start_screen, container, false)
-        return binding.root
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        return getPersistentView(inflater, container, savedInstanceState, R.layout.fragment_start_screen)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        onClickMethod()
+
+        if (!hasInitializedRootView) {
+            hasInitializedRootView = true
+
+            onClickMethod()
+
+        }
+
     }
 
     private fun onClickMethod() {
